@@ -1,0 +1,104 @@
+{
+  // ============================================
+  // SCREENSHOT ORGANIZER CONFIGURATION
+  // ============================================
+
+  // Where to find screenshots to organize
+  "source_folder": ".",
+
+  // Where to save organized screenshots
+  "destination_folder": "./Organized_Screenshots",
+
+  // ============================================
+  // CATEGORIES & KEYWORDS
+  // ============================================
+  // How it works:
+  // 1. OCR extracts text from screenshot
+  // 2. Searches for these keywords in the text
+  // 3. Matches to category if keyword found
+  //
+  // You can add your own categories!
+  // Example: "Gaming": ["game", "steam", "xbox"]
+  // ============================================
+
+  "categories": {
+    // Programming screenshots
+    "Code": [
+      "code", "terminal", "programming", "script",
+      "console", "editor", "python", "javascript",
+      "java", "function", "class", "import", "def",
+      "const", "var", "git", "github"
+    ],
+
+    // Text documents, PDFs, articles
+    "Documents": [
+      "document", "text", "pdf", "article",
+      "paper", "report", "essay", "readme"
+    ],
+
+    // Funny images, memes
+    "Memes": [
+      "meme", "funny", "comic", "joke",
+      "lol", "haha", "humor"
+    ],
+
+    // Chat conversations
+    "Chats": [
+      "chat", "message", "conversation",
+      "whatsapp", "telegram", "discord",
+      "slack", "messenger"
+    ],
+
+    // Design mockups, UI
+    "Design": [
+      "design", "ui", "mockup", "figma",
+      "sketch", "prototype", "wireframe"
+    ],
+
+    // Diagrams, charts, flowcharts
+    "Diagrams": [
+      "diagram", "chart", "graph", "flowchart",
+      "architecture", "uml", "visualization"
+    ],
+
+    // Bills, receipts, invoices
+    "Receipts": [
+      "receipt", "bill", "invoice", "payment",
+      "transaction", "order", "purchase"
+    ],
+
+    // Error messages, exceptions
+    "Errors": [
+      "error", "exception", "traceback",
+      "warning", "failed", "fatal", "bug"
+    ]
+  },
+
+  // ============================================
+  // ORGANIZATION OPTIONS
+  // ============================================
+
+  // Create year-month subfolders?
+  // true:  Code/2025-12/screenshot.png
+  // false: Code/screenshot.png
+  "organize_by_date": true,
+
+  // Generate descriptive filenames from content?
+  // true:  python_error_traceback_2025-12-05.png
+  // false: Screenshot_20251205.png (keeps original)
+  "rename_files": true,
+
+  // Move or copy files?
+  // "move": Removes from source (faster)
+  // "copy": Keeps original (safer)
+  "move_or_copy": "move",
+
+  // Which file types to process
+  "image_extensions": [".png", ".jpg", ".jpeg", ".gif", ".bmp"],
+
+  // Minimum CLIP confidence (0.0 to 1.0)
+  // Lower = more lenient (may miscategorize)
+  // Higher = more strict (may leave uncategorized)
+  // Recommended: 0.3
+  "min_confidence": 0.3
+}

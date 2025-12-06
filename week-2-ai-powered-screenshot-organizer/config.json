@@ -1,0 +1,19 @@
+{
+  "source_folder": ".",
+  "destination_folder": "./Organized_Screenshots",
+  "categories": {
+    "Code": ["code", "terminal", "programming", "script", "console", "editor", "python", "javascript", "java", "function", "class", "import", "def", "const", "var"],
+    "Documents": ["document", "text", "pdf", "article", "paper", "report", "essay"],
+    "Memes": ["meme", "funny", "comic", "joke", "lol", "haha"],
+    "Chats": ["chat", "message", "conversation", "whatsapp", "telegram", "discord", "slack"],
+    "Design": ["design", "ui", "mockup", "figma", "sketch", "prototype"],
+    "Diagrams": ["diagram", "chart", "graph", "flowchart", "architecture", "uml"],
+    "Receipts": ["receipt", "bill", "invoice", "payment", "transaction"],
+    "Errors": ["error", "exception", "traceback", "warning", "failed", "fatal"]
+  },
+  "organize_by_date": true,
+  "rename_files": true,
+  "move_or_copy": "move",
+  "image_extensions": [".png", ".jpg", ".jpeg", ".gif", ".bmp"],
+  "min_confidence": 0.3
+}

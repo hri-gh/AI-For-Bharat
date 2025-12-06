@@ -1,0 +1,17 @@
+# AI-Powered Screenshot Organizer Dependencies
+
+# Core ML libraries
+torch>=2.0.0
+transformers>=4.30.0
+pillow>=9.0.0
+
+# OCR
+easyocr>=1.7.0
+
+# Optional: For faster processing
+# accelerate>=0.20.0
+
+# Note:
+# - torch will auto-detect CUDA if available
+# - easyocr includes opencv-python and other dependencies
+# - Total download size: ~2-3 GB (includes model weights)
